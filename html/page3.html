@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>Thiết kế form đăng ký</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/style3.css">
+</head>
+<body>
+    <div class="container">
+        <form id="frmRegister">
+            <h3 class="title">Đăng ký thành viên CLB HTML</h3>
+            
+            <div class="form-group">
+                <label class="label" for="txtFullname">Họ tên:</label>
+                <input class="form-control" type="text" id="txtFullname" name="txtFullname">
+            </div>
+
+           <div class="form-group">
+                 <label class="label">Mã lớp:</label>
+                 <select class="form-control" name="malop">
+                 <option value="">-- Chọn mã lớp --</option>
+                 <option value="da24ttc">DA24TTA</option>
+                 <option value="da24tta">DA24TTB</option>
+                 <option value="da24ttb">DA24TTC</option>
+                 <option value="da24ttd">DA24TTD</option>
+            </select>
+            </div>
+
+            <div class="form-group">
+                <label class="label" for="txtIDCard">Số CMND/CCCD:</label>
+                <input class="form-control" type="text" id="txtIDCard" name="txtIDCard">
+            </div>
+
+            <div class="form-group">
+                <label class="label" for="txtAddress">Địa chỉ:</label>
+                <input class="form-control" type="text" id="txtAddress" name="txtAddress">
+            </div>
+
+            <div class="form-group">
+                <label class="label" for="txtPhone">Số điện thoại:</label>
+                <input class="form-control" type="text" id="txtPhone" name="txtPhone">
+            </div>
+
+            <div class="form-group">
+                <label class="label" for="txtBirthday">Ngày sinh:</label>
+                <input class="form-control" type="date" id="txtBirthday" name="txtBirthday">
+            </div>
+
+            <div class="form-group">
+                <label class="label">Giới tính:</label>
+                <div class="gender-box">
+                    <input type="radio" id="male" name="gender" value="Nam"> Nam
+                    <input type="radio" id="female" name="gender" value="Nữ"> Nữ
+                </div>
+            </div>
+
+            <input type="submit" id="sbRegister" name="sbRegister" value="Đăng ký">
+        </form>
+    </div>
+</body>
+</html>
